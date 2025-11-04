@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LA PIEDRA ROLEPLAY - Replica</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#e11d48;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef8;background:linear-gradient(180deg,#061022 0%, #071426 100%);}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:20px}
+    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#f97316);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:14px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{margin-top:28px;background:var(--glass);padding:28px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.7)}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{color:var(--muted);margin-top:8px;line-height:1.5}
+    .cards{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;color:#e6eef8}
+    .card h3{margin-top:0}
+    ul.rules{padding-left:18px;margin:8px 0 0}
+    ul.rules li{margin:8px 0;color:var(--muted)}
+    .contact-form{display:flex;flex-direction:column;gap:10px}
+    input[type="text"], textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:#071029;color:#e6eef8}
+    button{background:var(--accent);border:none;padding:10px 12px;border-radius:8px;color:white;font-weight:700;cursor:pointer}
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:14px}
+    @media(max-width:880px){.cards{grid-template-columns:1fr}nav{display:none}.logo{width:64px;height:64px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">LA<br>P RD</div>
+      <div>
+        <div style="font-weight:800;font-size:18px">LA PIEDRA ROLEPLAY</div>
+        <div style="color:var(--muted);font-size:13px">Servidor MTA - Experiencia de rol realista</div>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#reglas">Reglas</a>
+        <a href="#staff">Staff</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+      <h1>Bienvenido a La Piedra Roleplay</h1>
+      <p>Un servidor MTA inspirado en la verdadera experiencia de rol. Vive, trabaja, compra vehículos, crea historias y disfruta de la comunidad.</p>
+      <p style="margin-top:12px;color:var(--muted)"><strong>IP:</strong> Próximamente &nbsp;&nbsp; <strong>Discord:</strong> Próximamente</p>
+    </section>
+
+    <div class="cards">
+      <div class="card" id="reglas">
+        <h3>Reglas Básicas</h3>
+        <ul class="rules">
+          <li>Respetar a todos los jugadores y al staff del servidor.</li>
+          <li>Prohibido el uso de hacks o cheats.</li>
+          <li>No hacer PowerGaming, MetaGaming ni DeathMatch.</li>
+          <li>Evitar spam, flood y lenguaje tóxico.</li>
+          <li>Usar nombres realistas (no IC con OOC).</li>
+          <li>Respetar zonas de rol y eventos oficiales.</li>
+          <li>No rolear sin consentimiento o abusar de bugs.</li>
+          <li>Reportar problemas directamente al staff.</li>
+        </ul>
+      </div>
+
+      <aside class="card" id="contacto">
+        <h3>Contacto con el Staff</h3>
+        <p>¿Tienes dudas o sugerencias? Envíanos un mensaje:</p>
+        <form class="contact-form" onsubmit="event.preventDefault();alert('Mensaje enviado (simulado)')">
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="text" placeholder="Asunto" required>
+          <textarea rows="4" placeholder="Escribe tu mensaje" required></textarea>
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+        <h4>Información de Contacto</h4>
+        <p style="color:var(--muted);margin:6px 0">Correo: pauloytgamer79@gmail.com</p>
+        <p style="color:var(--muted);margin:6px 0">Discord: Próximamente</p>
+      </aside>
+    </div>
+
+    <footer>
+      © 2025 LA PIEDRA ROLEPLAY — Diseñado por Paukz
+    </footer>
+  </div>
+</body>
+</html>
